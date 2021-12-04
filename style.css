@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "small-1 small-1 small-2 small-3"
+      "small-1 small-1 small-2 small-4"
+      "small-1 small-1 small-5 small-5";
+  }
+  
+  .small-1 { grid-area: small-1; }
+  
+  .small-2 { grid-area: small-2; }
+  
+  .small-3 { grid-area: small-3; }
+  
+  .small-4 { grid-area: small-4; }
+  
+  .small-5 { grid-area: small-5; }
+  .container div{
+    background-color: rgb(182, 130, 130);
+  }
+ img {
+     height:100px ;
+     width:200px ;
+     border-radius: 300%;
+ }
